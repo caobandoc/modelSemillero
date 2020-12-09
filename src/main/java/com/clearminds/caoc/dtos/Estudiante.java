@@ -3,11 +3,15 @@ package com.clearminds.caoc.dtos;
 public class Estudiante {
 	private String nombre;
 	private String apellido;
-	private int numero;
-	public Estudiante(String nombre, String apellido, int numero) {
+	private int id;
+	
+	
+	public Estudiante() {
+	}
+	public Estudiante(String nombre, String apellido, int id) {
 		this.nombre = nombre;
 		this.apellido = apellido;
-		this.numero = numero;
+		this.id = id;
 	}
 	public Estudiante(String nombre, String apellido) {
 		this.nombre = nombre;
@@ -26,14 +30,14 @@ public class Estudiante {
 	public void setApellido(String apellido) {
 		this.apellido = apellido;
 	}
-	public int getNumero() {
-		return numero;
+	public int getId() {
+		return id;
 	}
-	public void setNumero(int numero) {
-		this.numero = numero;
+	public void setNumero(int id) {
+		this.id = id;
 	}
 	@Override
 	public String toString() {
-		return "Estudiante [nombre=" + nombre + ", apellido=" + apellido + ", numero=" + numero + "]";
+		return "Estudiante [nombre=" + nombre + ", apellido=" + apellido + ", id=" + id + "]";
 	}
 }
